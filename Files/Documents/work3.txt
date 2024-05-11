@@ -1,0 +1,129 @@
+Problem # 3:
+
+1) Declare num,totalSum,countValue,count
+2) countValue = "y"
+3) totalSum = 0
+4) count = 0
+
+5) Repeat Until (countValue == "y")
+    5.1) Print "Enter the number: "
+    5.2) Input num
+    
+    5.3) If (num%2 ! = 0)
+        5.5.1) totalSum = totalSum + num
+        5.5.2) count = count + 1
+        
+    5.4) Print "Press y to Enter number again or any other alphabet to exit."
+    5.5) Input countValue
+
+6) Print "You have entered", count ,"odd numbers and their total sum is", totalSum
+
+Problem # 5:
+1) Declare num,count
+2) Print "Enter number "
+3) Input num
+4) count = 1
+5) Print "The positive divisors of ", num ,"are: "
+
+6) Repeat Until (count < = num)
+    6.1) If (num % count == 0)
+        6.1.1) Print count
+    6.2) count = count + 1
+
+Problem # 6:
+1) Declare num,count,factorail
+2) Print "Enter number "
+3) Input num
+
+4) count = 1
+5) factorail = 1
+
+6) Repeat Until (count < = num)
+    6.1) factorail = factorail * count
+    6.2) count = count + 1
+
+7) Print "The factorail of" num "is" factorail
+
+Problem # 9:
+1) Declare num, product, num1
+2) Print "Enter the number: "
+3) Input num
+4) product = 1
+
+5) Repeat Until (num>10)
+    5.1) num1 = num % 10
+    5.2) num = num / 10
+    5.3) product = product * num1
+    
+6) product = product * num
+7) Print "The product of the digits is ", product
+
+Problem # 10:
+1) Declare num,count,condition
+2) Print "Enter number "
+3) Input num
+4) count = 1
+5) condition = 0
+
+6) Repeat Until (count < = num)
+    6.1) If (num % count == 0)
+        6.1.1) condition = condition + 1
+    6.2) count = count + 1
+
+7) If (condition == 2)
+    7.1) Print num,"is a prime number"
+Otherwise
+    7.1) Print num,"is not a prime number"
+
+Problem # 15:
+1) Declare num1, num2, min, hcf
+2) Print "Enter the number 1: "
+3) Input num1
+4) Print "Enter the number 1: "
+5) Input num2
+
+6) If (num1>num2)
+    6.1) min = num2
+Otherwise
+    6.1) min = num1
+
+7) count = 1
+
+8) Repeat Until (count < = min)
+    8.1) If (num1 % count == 0 AND num2 % count == 0)
+        8.1.1) hcf = count
+    8.2) count = count + 1
+
+9) Print "HCF is ", hcf
+
+Problem # 12:
+1) Declare decimalNum,octalNum, digit, remainder
+2) Print "Enter decimal number"
+3) Input decimalNum
+4) octalNum = 0
+5) digit = 1
+
+6) Repeat Until (decimalNum>0)
+    6.1) remainder = decimalNum % 8
+    6.2) octalNum = octalNum + remainder*digit
+    6.3) decimalNum = decimalNum // 8
+    6.4) digit = digit * 10
+
+7) Print "The octal equivalent number to ", decimalNum," is ", octalNum
+
+Problem # 8:
+1) Declare a,n, count,result
+
+2) Print "Enter a:"
+3) Input a
+4) Print "Enter n:"
+5) Input n
+
+6) count = 1
+7) result = 1
+
+8) Repeat Until (count < = n)
+    8.1) result = result * a
+    8.2) count = count + 1
+
+9) Print "a^n is ", result

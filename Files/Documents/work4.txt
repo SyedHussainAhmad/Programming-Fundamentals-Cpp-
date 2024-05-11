@@ -1,0 +1,160 @@
+Problem # 2:
+1) Declare num
+2) Print "Enter your number:"
+3) Input num
+4) Print num * (num+1)/2
+
+Problem # 3:
+1) Declare num,count,sum
+2) Print "Enter the number: "
+3) Input num
+4) count = 1
+5) sum = 0
+
+6) Repeat Until (count<num)
+    6.1) If (num%count == 0)
+        6.1.1) sum = sum + count
+    count = count + 1
+
+7) If (sum == num)
+    7.1) Print "This is a perfect number."
+   Otherwise If
+    7.1) Print "This is not a perfect number."
+
+Problem # 4:
+1) Declare num,copiedNum, remainder reverseNum
+2) Print "Enter the number:"
+3) Input num
+4) copiedNum = num
+5) Repeat Until (copiedNum>0)
+    5.1) remainder = copiedNum % 10
+    5.2) reverseNum = reverseNum * 10 + remainder
+    5.3) copiedNum = copiedNum/10
+
+6) If (copiedNum == num)
+    6.1) Print "Palindrome"
+   Otherwise If
+    6.1) Print "Not a Palindrome"
+
+Problem # 7:
+1) Declare numerator,denominator 
+2) Input numerator,denominator
+3) Repeat Until (a%b!=0)
+    3.1) remainder = numerator/denominator
+    3.2) numerator = denominator
+    3.3) denominator = remainder
+
+4) If (denominator == 1)
+    4.1) Print "These numbers are co prime."
+
+Problem # 8:
+1) Declare terms, term1 , term2 , nextTerm, count
+2) Print "Enter number of terms"
+3) If (terms == 1)
+    Print 1
+   Otherwise If (terms == 2)
+    Print 3
+4) term1 = 1
+5) term2 = 2
+6) sum = term1 + term2
+7) count = 3
+8) Repeat Until (count <= terms)
+    8.1) nextTerm = term1 + term2
+    8.2) sum = sum + nextTerm
+    8.3) term1 = term2
+    8.4) term2 = nextTerm
+    8.5) count = count + 1
+
+9) Print sum
+
+Problem # 5:
+1) Declare num, remainder , reverseNum
+2) Print "Enter the number: "
+3) Input num
+4) If (num<0)
+    4.1) num = num * -1
+5) remainder = 0
+
+6) Repeat Until (num>0)
+    6.1) remainder = num%10
+    6.2) reverseNum = reverseNum * 10 + remainder
+    6.3) num = num//10
+
+7) Repeat Until (reverseNum>0)x
+    7.1) remainder = reverseNum%10
+    7.2) Print remainder
+    7.3) reverseNum = reverseNum//10
+
+Problem # 10:
+1) Declare num1, num2 , max, count
+2) Print "Enter first number:"
+3) Input num1
+4) Print "Enter second number:"
+5) Input num2
+
+6) If (num1>num2)
+    6.1) max = num1
+   Otherwise If (num2>num1)
+    6.1) max = num2
+
+7) count = 0
+
+8) Repeat Until (count ! = 1)
+    8.1) If (max%num1 ==0 AND max % num2 ==0)
+        8.1.1) count = 1
+    8.2) max = max + 1
+
+9) Print max - 1
+
+Problem # 6:
+1) Declare num , remainder , binaryNum
+2) Print "Enter a number"
+3) Input num
+4) remainder = 0
+5) binaryNum = 0
+6) Repeat Until (num>0)
+    6.1) remainder = num%2
+    6.2) binaryNum = binaryNum * 10 + remainder
+    6.3) num = num/2
+7) Print binaryNum
+
+Problem # 9:
+1) Declare num,max,min,count,average
+2) Print "Enter the number: "
+3) Input num
+4) max = 0
+5) min = num
+6) count = 1
+7) sum = num
+
+8) Repeat Until (num ! = -99)
+    8.1) Input num
+
+    8.2) If (num>max)
+        8.1.1) max = num
+         Otherwise If (num<min)
+        8.1.1) min = num
+
+    8.3) count = count + 1
+
+    8.4) if (num ! = -99)
+        8.4.1) sum = sum + num
+
+9) If (sum ! = 99)
+    9.1) Print "Average = ", sum/count
+
+Problem # 11:
+1) Declare steps,count ,x,y,distance
+2) Print "Enter number of steps."
+3) Input steps
+4) count = 1
+
+5) Repeat Until ( count < = steps)
+    5.1) Print "Enter ", count , "step x,axis"
+    5.2) Input x
+    5.3) Print "Enter ", count , "step y,axis"
+    5.4) Input y
+    5.5) count = count + 1
+
+6) distance = (x*x) + (y*y)
+7) Print "Squared Distance ", distance

@@ -1,0 +1,266 @@
+/* Problem: Given a number, your pseudo code will find and display the longest conscecutive repeating digit. 
+Sample Input: 1999161117
+Sample Output: 9
+*/
+
+1) Declare num,currentDigit,maxDigit,currentLength,maxLength
+2) Print "Enter any number: "
+3) Input num
+
+4) maxDigit = num%10 
+5) currentDigit = maxDigit
+6) currentLength = 1
+7) maxLength = 1
+
+8) Repeat Until (base < = num) (num>0)
+    5.1) exponent = base + 1
+    5.2) count = 1
+    5.2) Repeat Until (count < = exponent)
+    5.2) base = base + 1
+   8.1) num = num/10
+   8.2) If (num%10 == currentDigit)
+        8.2.1)currentLength+=1
+
+        Otherwise
+        8.2.1)If (currentLength>maxLength)
+            8.2.1.2)maxLength = currentLength
+            8.2.1.2)maxDigit = currentDigit
+        8.2.2)currentDigit = num%10
+        8.2.3)currentLength = 1
+    
+    8.3) If (currentLength>maxLength)
+        8.3.1) maxLength = currentLength
+        8.3.2) maxDigit = currentDigit
+    
+    8.4) Print maxDigit
+
+
+Problem # 2:
+1) Declare num, base, exponent, count, sum
+2) Print "Enter the number"
+3) Input num
+
+4) base = 1
+5) sum = 0
+
+6) Repeat Until (base < = num) 
+    6.1) exponent = base + 1
+    6.2) count = 1
+    6.3) result = 1
+
+    6.4) Repeat Until (count < = exponent)
+        6.4.1) result = result * base
+        6.4.2) count = count + 1
+
+    6.5) base = base + 1
+    6.5) sum = sum + result
+
+7) Print sum
+
+Problem # 3:
+1) Declare num,S
+2) Print "Enter number"
+3) Input num
+4) Print "Enter S"
+5) Input S
+
+
+6) If (num==1)
+    sum = 1
+
+   Otherwise
+
+    6.1) Declare term1,term2,term3,termSum,count,exponent,base,result,sum,innerCount
+    6.2) term1 = 1
+    6.3) term2 = 1
+    6.4) termSum = term1
+    6.5) count = 2
+
+    6.6) Repeat Until (count < = num)
+        6.6.1) exponent = S + termSum
+        6.6.2) termSum = term1+term2
+        6.6.3) term3 = term1+term2
+        6.6.4) term1 = term2
+        6.6.5) term2 = term3
+
+        6.6.6) If (count%2==0)
+            6.6.6.1) base = 2
+        Otherwise
+            6.6.6.1) base = 3
+
+        6.6.7) sum = 1
+        6.6.8) innerCount = 1
+        6.6.9) result = 1
+
+        6.6.10) Repeat Until (innerCount < = exponent)
+            6.6.10.1) result = result * base
+            6.6.10.2) innerCount = innerCount + 1
+
+        6.6.11) count = count + 1
+        6.6.12) sum = sum + result
+
+7) Print sum
+
+
+Problem # 5:
+1) Declare num
+2) Print "Enter Number"
+3) Input num
+
+4) numenator = 1
+5) denominator = 1
+6) result = 0
+
+7) count = 1
+8) Repeat Until (count < = num)
+    8.1) term = numenator/denominator
+    8.2) denominator = denominator + 2
+
+    8.2) If (count%2==0)
+        8.2.1) result = result-term
+         Otherwise
+        8.2.2) result = result+term
+
+9) result = result*4
+10) Print result
+
+Problem # 8:
+1) Declare num,copyNum,sum,count,remainder,factorial
+2) Print "Enter the number"
+3) Input num
+4) sum = 0
+5) copyNum = num
+6) Repeat Until(num>0)
+    6.1) count = 1
+    6.2) remainder = num%10
+    6.3) num = num/10
+
+    6.4) Repeat Until (count < = remainder)
+        6.4.1) factorial = factorial*count
+        6.4.2) count=count+1
+
+    6.5) sum = sum + factorial
+
+6) If (sum == copyNum)
+    6.1) Print "Strong Number"
+    Otherwise
+    6.1) Print "Not a Strong Number"
+
+Problem # 1:
+Declare m,n,max,min,count
+2) Print "Enter First number"
+3) Input m
+4) Print "Enter Second number"
+5) Input n
+
+6) If (m<n)
+    6.1)max = n
+    6.2)min = m
+
+   Otherwise
+    6.1)max = m
+    6.2)min = n
+
+7) Repeat Until (min < = max)
+    7.1) If (min==0 OR min==1)
+            7.1.1) min = min + 1
+         Otherwise
+            7.1.1) count = 2
+
+            7.1.2) Repeat Until (count < = min/2 AND min%count == 0)
+                7.1.2.1) count = count + 1
+
+            7.3.1) If (count>min/2)
+              7.3.1.1) Print min
+    7.2) min = min + 1
+
+Problem # 4:
+1) Declare num,factor,count
+2) Print "Enter number"
+3) Input num
+
+4) factor = 2
+
+5) Repeat Until (factor < = num)
+    5.1) If (num%factor==0)
+        5.1) count = 2
+        5.2) Repeat Until (count < = factor/2 AND factor%count == 0)
+            5.2.1) count = count + 1
+
+        5.3) If (count>factor/2)
+          5.3.1) Print factor
+        5.4) factor = factor+1
+
+Problem # 9:
+1) Declare num
+2) Print "Enter the number"
+3) Input num
+
+4) primeFactor1 = 2
+5) primeFactor2 = 3
+6) primes = 2
+
+7) Repeat Until (primes <= num)
+    7.1) count = 2
+    7.2) Repeat Until (count<primes AND primes%count ! = 0)
+        7.2.1) count = count + 1
+
+    7.3) If (count==primes)
+        7.3.1) primeFactor3 = count
+    
+    7.4) If (primeFactor2 - primeFactor1==2)
+        7.4.1) Print primeFactor1,primeFactor2
+
+    7.5) primeFactor1 = primeFactor2
+    7.6) primeFactor2 = primeFactor3
+
+    7.7) primes = primes+1
+
+Problem # 7:
+1) Declare year,rainFallPerInch
+2) year = 0
+
+3) Repeat Until (year < 1)
+    4.1) Print "Enter no of years"
+    4.2) Input year
+
+4) cnt = 1
+5) noOfMonths = 12*year
+
+6) Repeat Until (cnt < = year)
+    6.1) innerCount = 1
+    6.2) sum = 0
+
+    6.3) Repeat Until (innerCount<=12)
+        6.3.1) Print "Enter Rainfall per inch for month", innerCount
+        6.3.2) Input rainFallPerInch
+        6.3.3) sum = sum + rainFallPerInch
+
+    6.4) cnt = cnt + 1
+    
+8) average = sum/noOfMonths
+9) Print noOfMonths,sum,average
+
+Problem # 6:
+1) Declare term1,term2
+2) term1 = -1
+
+3) Repeat Until (term1<0)
+    3.1) Print "Enter number 1: "
+    3.2) Input term1
+
+3) term2 = -1
+4) Repeat Until (term2<0)
+    4.1) Print "Enter number 2: "
+    4.2) Input term2
+
+5) term3 = -1
+6) count = 1
+7) Repeat Until (term3<term2 OR term3>=0) 
+    7.1) Print term1,term2,term3
+    7.2) term3 = term1-term2
+    7.3) term1 = term2
+    7.4) term2 = term3
+    7.5) count = count + 1
+
+8) Print "This is a sumac sequence of length", count

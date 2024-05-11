@@ -1,0 +1,219 @@
+Problem # 1:
+Declare age
+Print "Please Enter your age"
+Input age
+If (age < 18)
+    Print "You are not eligible"
+Otherwise
+    Print "You are eligible"
+
+Problem # 2:
+Declare num
+Print "Enter number"
+
+If (num == 1)
+    Print "Monday"
+Otherwise If (num == 2)
+    Print "Tuesday"
+Otherwise If (num == 3)
+    Print "Wednesday"
+Otherwise If (num == 4)
+    Print "Thurday"
+Otherwise If (num == 5)
+    Print "Friday"
+Otherwise If (num == 6)
+    Print "Saturday"
+Otherwise
+    Print "Sunday"
+    
+Problem # 3:
+Declare num
+Print "Enter any number"
+Input num
+
+If (num<0)
+    Print "Absolute value of a number is", num*-1
+Otherwise
+    Print "Absolute value of a number is", num
+
+Problem # 4:
+Declare marks
+Print "Enter your marks"
+Input marks
+
+If (marks>80)
+    Print "good luck"
+Otherwise
+    Print "better luck next time"
+
+Problem # 5:
+Declare num1,num2
+Print "Enter two numbers"
+Input num1, num2
+
+If (num1%num2 ==0)
+    Print num ,"is divisible by", num2
+
+Problem # 6:
+Declare num, num1,num2,num3,num4
+Print "Enter a four digit number"
+Input num
+
+num4 = num%10
+num = num/10
+num3 = num%10
+num = num/10
+num2 = num%10
+num = num/10
+
+Print num1, "-",num2, "-",num3, "-",num4
+
+Problem # 7:
+
+Declare earthWeight, planetNumber, gravityValue
+Print "Please Enter Your current Earth Weight"
+Input earthWeight
+
+Print "I have Information for the following planets:
+1.Venus 2.Mars 3. Jupiter
+4.Saturn 5.Uranus 6.Neptune
+What planet are you visiting?"
+
+Input planetNumber
+
+
+If (planetNumber == 1)
+    gravityValue = 0.78
+Otherwise If (planetNumber == 2)
+    gravityValue = 0.39
+Otherwise If (planetNumber == 3)
+    gravityValue = 2.65
+Otherwise If (planetNumber == 4)
+    gravityValue = 1.17
+Otherwise If (planetNumber == 5)
+    gravityValue = 1.05
+Otherwise
+    gravityValue = 1.23
+
+Print "your weight would be",earthWeight*gravityValue,"pounds on that planet"
+
+Problem # 8:
+Declare age
+Print "Please Enter your age."
+Input age
+
+If (age > 55)
+    Print "Your bill is 10.00$"
+Otherwise If (age < 55 and age > 20)
+    Print "Your bill is 15.00$"
+Otherwise If (age < 20 and age > 12)
+    Print "Your bill is 15.00$"
+Otherwise If (age < 12 and age > 2)
+    Print "Your bill is 10.00$"
+Otherwise 
+    Print "You are free of cost here."
+
+Problem # 9:
+Declare cgpa
+Print "Enter your CGPA"
+Input cgpa
+
+If (cgpa < 1.7)
+    Print "You are dropped out"
+Otherwise If (cgpa > 1.7 and cgpa < 2.0)
+    Print "You are on probation"
+Otherwise
+    Print "You are safe"
+
+Problem # 10:
+Declare num1, num2, num3
+Print "Enter three numbers"
+Input num1, num2, num3
+
+If (num1>num2 and num1>num3)
+    Print num1, "is largest"
+Otherwise If (num2>num1 and num2>num3)
+    Print num2, "is largest"
+Otherwise
+    Print num3, "is largest"
+
+Problem # 11:
+Declare hourlyPay, hourPerWeek
+Print "Enter the total hours worked:"
+Input hourPerWeek
+Print "Enter Employee hour per rate"
+Input hourlyPay
+
+If hourPerWeek < 40
+    Print "Regular Pay: ",hourlyPay*hourPerWeek
+    Print "Total Pay: ",hourlyPay*hourPerWeek
+
+Otherwise
+    Print "Regular Pay: ",hourlyPay*40
+    overtimePay = (hourPerWeek - 40) * (hourlyPay*1.5)
+    Print "Overtime Pay: ",overtimePay
+    Print "Total Pay: ",overtimePay + (hourlyPay*40)
+    
+Problem # 12:
+Declare marks,letterGrade,gradePoint
+Print "Enter your marks"
+Input marks
+
+If (marks > 0 and marks < 49)
+    letterGrade = "F"
+    gradePoint = 0
+Otherwise If (marks > 50 and marks < 54)
+    letterGrade = "D"
+    gradePoint = 1
+Otherwise If (marks > 55 and marks < 57)
+    letterGrade = "C-"
+    gradePoint = 1.7
+Otherwise If (marks > 58 and marks < 60)
+    letterGrade = "C"
+    gradePoint = 2
+Otherwise If (marks > 61 and marks < 64)
+    letterGrade = "C+"
+    gradePoint = 2.3
+Otherwise If (marks > 65 and marks < 69)
+    letterGrade = "B-"
+    gradePoint = 2.7
+Otherwise If (marks > 70 and marks < 74)
+    letterGrade = "B"
+    gradePoint = 3
+Otherwise If (marks > 75 and marks < 79)
+    letterGrade = "B+"
+    gradePoint = 3.3
+Otherwise If (marks > 80 and marks < 84)
+    letterGrade = "A-"
+    gradePoint = 3.7
+Otherwise
+    letterGrade = "A"
+    gradePoint = 4
+
+Print "Letter Grade:",letterGrade
+Print "Grade Point:",gradePoint
+
+Problem # 14:
+Declare num, num1,num2,num3
+Print "Enter a four digit number"
+Input num
+
+num3 = num%10
+num1 = num/10
+num2 = num%10
+num1 = num/10
+
+If (num3==num1)
+    Print num, "is Palindrome"
+Otherwise
+    Print num, "is not Palindrome"
+
+Problem # 15:
+There's a "3 for 2" (or "2+1" if you like) offer on mangoes. In more simple words, there is 1 free mango for every 2 mangoes bought. Write a pseudo code that takes input for quantity and price (per mango), and prints the total cost of the mangoes.
+
+For example, if quantity bought is 9 and the price per mango is 5, then the cost will be 30.
+Pseudo code:
+Declare quantity,price
+Print "Enter quantity of mangoes and price per mango: "
+Input quantity,price
+
